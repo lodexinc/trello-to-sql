@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>e4 Strategic - Trello Reporting</title>
+    <meta charset="utf-8" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/trello.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="step0" class="main">
+        <div class="wrapper">
+            <h1>Trello to SQL</h1>
+            <h2>Ok, first things first. Let's get a database setup:</h2>
+            <label>
+                Copy the script below and run it:
+            </label>
+            <textarea id="txtScript"></textarea>
+            <div class="output">
+            </div>
+        </div>
+        <div class="footer">
+            <!--<a>Download backup (restore as Trello)</a>-->
+            <button onclick="nextStep();">
+                Next
+            </button>
+        </div>
+    </div>
+    <div id="step1" class="main" style="display: none;">
+        <div class="wrapper">
+            <h1>Connection settings</h1>
+            <h2>What is your SQL Server connection string?</h2>
+            <label>
+                Please enter your connection string:
+            </label>
+            <input placeholder="i.e. Server=JAKO\SQLEXPRESS;UID=sa;PWD=sql_server;Timeout=120;Enlist=false;" id="connString" type="text" />
+            <div class="output">
+            </div>
+        </div>
+        <div class="footer">
+            <button class="none" onclick="backToStart();">
+                Back
+            </button>
+            <button id="btn6" onclick="createDatabase();">
+                Next
+            </button>
+        </div>
+    </div>
+    <div id="step2" class="main" style="display: none;">
+        <div class="wrapper trello">
+            <h1>Import data</h1>
+            <h2>Follow the steps below to import your Trello board:</h2>
+            <button id="btn1" onclick="auth();">
+                Authorise Trello
+            </button>
+            <button id="btn2" onclick="start();" disabled>
+                Download data
+            </button>
+            <button id="btn4" onclick="importData();" disabled>
+                Import data
+            </button>
+            <button id="btn5" onclick="excel();" disabled>
+                Create Excel export
+            </button>
+            <div class="output">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
