@@ -1,5 +1,5 @@
 ﻿(function () {
-    var opts = { "version": 1, "apiEndpoint": "https://api.trello.com", "authEndpoint": "https://trello.com", "intentEndpoint": "https://trello.com", "key": "8d83e06c716650c850ea3452b8efd434" };
+    var opts = { "version": 1, "apiEndpoint": "https://api.trello.com", "authEndpoint": "https://trello.com", "intentEndpoint": "https://trello.com", "key": "[YOURKEY]" };
     var deferred, isFunction, isReady, ready, waitUntil, wrapper, slice = [].slice;
     wrapper = function (a, f, c) {
         var h, e, m, x, z, n, A, p, l, s, t, q, B, y, u, g, v, w; l = c.key; g = c.token; e = c.apiEndpoint; m = c.authEndpoint; A = c.intentEndpoint; v = c.version; z = e + "/" + v + "/"; q = a.location; h = {
