@@ -2,9 +2,9 @@
 
 Well, this is pretty straight forward. This web application will access your Trello board and then create a local MS SQL database with all your boards, lists, cards and their actions. This makes reporting a breeze. You can calculate the duration of a card in a list, resources assigned etc.
 
-**Trello API key:**
+**Get a Trello API key:**
 
-Get an Application Key from Trello and insert it in the web.config file:
+Proceed to the below link to get an API Key from Trello, then insert it in the web.config file:
 
 [https://trello.com/app-key/](https://trello.com/app-key/)
 
