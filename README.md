@@ -8,7 +8,11 @@ Proceed to the below link to get an API Key from Trello, then insert it in the w
 
 [https://trello.com/app-key/](https://trello.com/app-key/)
 
-**Getting started:**
+**Setup the IIS entry:**
+
+Download the source code and create the web application in your IIS management tool. Make sure the web application is working correctly by browsing to it. You should see the first image below:
+
+**Running the application:**
 
 Now you need to create the database using the script provided:
 
